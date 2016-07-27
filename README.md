@@ -3,7 +3,7 @@
 This website acts as a resume/CV/profile. In it I will hopefully have documented and exhibited the most prominent projects during my carreer. It is an ongoing project itself that I am using to learn coding and web developement. 
 
 
-I used a site template I found on the internet. Below is posted the readme.txt file that came with the template. It is easy to use and open source! 
+I used a site template I found on the internet. Below is posted the readme.txt file that came with the template. It is easy to use and open source! The template liscence is in the HTL5LICENSE.txt file in the repo. 
 
 Landed by HTML5 UP
 html5up.net | @ajlkn
