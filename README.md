@@ -1,4 +1,4 @@
-[Daniel Cavero - Website](http://dancavero.com)
+#[Daniel Cavero - Website](http://dancavero.com)
 
 This website acts as a resume/CV/profile. In it I will hopefully have documented and exhibited the most prominent projects during my carreer. It is an ongoing project itself that I am using to learn coding and web developement. 
 
