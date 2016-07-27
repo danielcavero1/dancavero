@@ -5,6 +5,9 @@ This website acts as a resume/CV/profile. In it I will hopefully have documented
 
 I used a site template I found on the internet. Below is posted the readme.txt file that came with the template. It is easy to use and open source! The template liscence is in the HTL5LICENSE.txt file in the repo. 
 
+
+
+---------------------------------------------------------------------------------------------
 Landed by HTML5 UP
 html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
