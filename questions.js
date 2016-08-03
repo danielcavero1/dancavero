@@ -64,26 +64,17 @@ var lastname =  lastname_lowercase.replace(/\s/g, '');
 var name =  name_lowercase.replace(/\s/g, '');
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/*Para la catira:
-Identifica a Jessi con una "contrasena" y la saluda :) 
-Si no puede responder nos ponemos tristes :( */ 
+/*Run functions */ 
 
 if (name == "jessica" || name == "jessi" || name == "jessy" || name == "jess"  && lastname == "pecoraro") {
     jessi()
-}
+    if (name == "nicolas" || name == "nico" && lastname == "cavero") {
+        nico();
 
-/*Para la Nico:
-Identifica a Nico con una "contrasena" y lo saluda :) 
-Si no puede responder lo insultamos  */ 
+    }
 
-
-if (name == "nicolas" || name == "nico" && lastname == "cavero") {
-    nico();
-
-}
-
-else {
-    unkown();
-}
+    else {
+        unkown();
+    }
 
 }
