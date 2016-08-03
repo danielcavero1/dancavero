@@ -1,26 +1,36 @@
+
 /*
-This cript is a identity recongition app. 
+This script is a identity recongition function. 
 Different people will cause different responses. 
 */
 
-// Defining of variables (name & lastname) with promps
-var name = prompt("Primer nombre: ");
-var lastname = prompt("Apellido: ");
+///////////////////////////////////////////////////////////////////////////////////////////////////
+//Definning main function
 
-// Fixing inputs to lowercase
-var lastname =  lastname.toLowerCase();
-var name =  name.toLowerCase();
+function IDcheck (){
 
-//Removing spaces from imputs
-var lastname =  lastname.replace(/\s/g, '');
-var name =  name.replace(/\s/g, '');
 
-/*Para la catira:
-Identifica a Jessi con una "contrasena" y la saluda :) 
-Si no puede responder nos ponemos tristes :( */ 
+///////////////////////////////////////////////////////////////////////////////////////////////////
+//Definning inner functions
 
-if (name == "jessica" || name == "jessi" || name == "jessy" || name == "jess"  && lastname == "pecoraro") {
-	var contrasena = prompt("Segura? Hmmm.... En que ciudad comimos Koreano por primera vez?");
+//Nico's function 
+
+function nico() {
+    var contrasena = prompt("Seguro? Hmmm.... cual es tu comida mex favorita?");
+    var contrasena = contrasena.toLowerCase();
+    var contrasena = contrasena.replace(/\s/g, '');
+    if (contrasena == "fajitas" || contrasena == "fajita"){
+			alert("Yeeeaaa!! Habla bro ta la vaina?");
+		} else {
+			alert ("poser");
+		}
+
+} 
+
+//Jessi's function
+
+function jessi() {
+   	var contrasena = prompt("Segura? Hmmm.... En que ciudad comimos Koreano por primera vez?");
 	var contrasena = contrasena.toLowerCase();
 	var contrasena = contrasena.replace(/\s/g, '');
 		if (contrasena == "losangeles" || contrasena == "la"){
@@ -28,16 +38,52 @@ if (name == "jessica" || name == "jessi" || name == "jessy" || name == "jess"  &
 		} else {
 			alert ("Bai :(");
 		}
+ 
+}
+
+//Unkown person
+
+function unkown() {
+    alert ("Hello " + name_original + " "+ lastname_original);
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Defining of variables (name & lastname) with promps
+var name_original = prompt("Primer nombre: ");
+var lastname_original = prompt("Apellido: ");
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Fixing inputs to lowercase
+var lastname_lowercase =  lastname_original.toLowerCase();
+var name_lowercase =  name_original.toLowerCase();
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Removing spaces from imputs
+var lastname =  lastname_lowercase.replace(/\s/g, '');
+var name =  name_lowercase.replace(/\s/g, '');
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/*Para la catira:
+Identifica a Jessi con una "contrasena" y la saluda :) 
+Si no puede responder nos ponemos tristes :( */ 
+
+if (name == "jessica" || name == "jessi" || name == "jessy" || name == "jess"  && lastname == "pecoraro") {
+    jessi()
+}
+
+/*Para la Nico:
+Identifica a Nico con una "contrasena" y lo saluda :) 
+Si no puede responder lo insultamos  */ 
+
+
+if (name == "nicolas" || name == "nico" && lastname == "cavero") {
+    nico();
 
 }
 
-if (name == "nicolas" && lastname == "cavero") {
-	var contrasena = prompt("Seguro? Hmmm.... cual es tu comida mex favorita?");
-	var contrasena =  contrasena.toLowerCase();
-		if (contrasena == "fajitas" || contrasena == "fajita"){
-			alert("Yeeeaaa!! Habla bro ta la vaina?");
-		} else {
-			alert ("poser");
-		}
+else {
+    unkown();
+}
 
 }
